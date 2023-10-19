@@ -1,0 +1,45 @@
+@import 'src/utils/scss/_Variables.scss';
+
+.root {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  background-image: radial-gradient(
+      at 47% 33%,
+      hsl(206.54, 66%, 31%) 0,
+      transparent 59%
+    ),
+    radial-gradient(at 82% 65%, hsl(204.11, 100%, 21%) 0, transparent 55%);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95vh;
+  width: 75vw;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+
+    .siteLogo {
+      @include glassmorphizm;
+      width: 5vw;
+    }
+    .siteMenu {
+      @include glassmorphizm;
+      width: 63vw;
+    }
+    .myAccount {
+      @include glassmorphizm;
+      width: 5vw;
+    }
+  }
+  .wrapper {
+    @include glassmorphizm;
+    height: 87vh;
+  }
+}

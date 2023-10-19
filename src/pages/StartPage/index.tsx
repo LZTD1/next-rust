@@ -2,9 +2,15 @@ import React from 'react';
 import Wave from 'react-wavify';
 
 import logo from '../../assets/logo.jpg';
-import styles from '../StartPage/StartPage.module.scss';
+import styles from './StartPage.module.scss';
 
-function index() : JSX.Element {
+// TODO адаптивная верстка:
+//         - Логотипа, резайс под экран (с помощью единой еденицы измерения и calc)
+//         - Кнопка, резайс под экран
+//         - Волны, резайс под высоту экрана
+//         - Регулировать количество точек в волнах на мобилках
+
+function index(): JSX.Element {
   return (
     <div className={styles.root}>
       <div className={styles.logoAndName}>
