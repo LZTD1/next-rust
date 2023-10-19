@@ -1,0 +1,33 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid purple;
+}
+.waves {
+  //   margin-top: auto;
+  border: 1px solid green;
+  width: 100vw;
+}
+// .waves {
+//   overflow: hidden;
+//   position: relative;
+//   align-items: bottom;
+//   justify-content: center;
+//   height: 100vh;
+
+//   div {
+//     position: absolute;
+//     height: 100%;
+//   }
+// }
+.logoAndName {
+  //   margin-top: auto;
+  border: 1px solid red;
+
+  img {
+    height: 300px;
+  }
+}
