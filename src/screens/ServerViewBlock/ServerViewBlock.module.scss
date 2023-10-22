@@ -1,7 +1,6 @@
 @import 'src/utils/scss/Variables.scss';
 
 .root {
-
   cursor: pointer;
   transition: $transition all;
   @include glassmorphizm;
@@ -56,10 +55,10 @@
   }
 
   &:hover {
-    background-color: rgba(17, 25, 40, 0.2);
+    background-color: rgba(17, 25, 40, 0.3);
   }
   &:active {
-    background-color: rgba(17, 25, 40, 0.3);
+    background-color: rgba(17, 25, 40, 0.4);
     transform: scale(0.98);
   }
 }
