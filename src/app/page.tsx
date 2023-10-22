@@ -1,11 +1,12 @@
-import HomePage from '@/pages/HomePage';
-import StartPage from '@/pages/StartPage';
+import StartPage from '@/screens/StartPage';
 
-export default function Home() {
+function Home() {
+
   return (
     <main>
-      {/* <StartPage /> */}
-      <HomePage />
+      <StartPage />
     </main>
   );
 }
+
+export default Home;

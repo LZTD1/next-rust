@@ -26,12 +26,37 @@
     height: 7vh;
 
     .siteLogo {
-      @include glassmorphizm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 5vw;
+
+      img {
+        height: 100%;
+      }
     }
     .siteMenu {
       @include glassmorphizm;
-      width: 63vw;
+
+      width: 64vw;
+      display: flex;
+      justify-content: space-evenly;
+
+      button {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.414);
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        transition: all $transition;
+
+        &:active {
+          scale: calc(0.93);
+        }
+        &:nth-child(1) {
+          color: white;
+        }
+      }
     }
     .myAccount {
       @include glassmorphizm;

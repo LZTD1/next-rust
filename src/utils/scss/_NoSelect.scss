@@ -1,5 +1,4 @@
 @mixin noselect {
-  pointer-events: none;
   -webkit-user-drag: none;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */

@@ -1,8 +1,8 @@
-import React from 'react';
 import Wave from 'react-wavify';
 
 import logo from '../../assets/logo.jpg';
 import styles from './StartPage.module.scss';
+import ServerViewBlock from '../ServerViewBlock';
 
 // TODO адаптивная верстка:
 //         - Логотипа, резайс под экран (с помощью единой еденицы измерения и calc)
@@ -13,9 +13,17 @@ import styles from './StartPage.module.scss';
 function index(): JSX.Element {
   return (
     <div className={styles.root}>
-      <div className={styles.logoAndName}>
-        <img src={logo.src} />
-        <button>Загрузка сайта...</button>
+      <div className={styles.content}>
+        <div className={styles.leftBlock}>
+          <div className={styles.viewBlock}>
+            <div className={styles.logoAndName}>
+              <img src={logo.src} />
+              <ServerViewBlock />
+            </div>
+          </div>
+          <div className={styles.news}></div>
+        </div>
+        <div className={styles.swapper}></div>
       </div>
       <div className={styles.waves}>
         <Wave
